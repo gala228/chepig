@@ -255,7 +255,20 @@
         <div class="text-box">
             <h1>Проекты</h1>
         </div>
-
+        <!-- Раздел 1: Ростелеком (исправлен) -->
+        <div class="section-title">Разработка веб-приложения для автоматизации процесса тестирования соискателей на вакансии в ПАО «Ростелеком»</div>
+        <div class="projects-grid">
+            <div class="image-wrapper" onclick="openModal('rostelecom', 1)">
+                <img src="Foto/рис 1.png" alt="Excel модель 1" class="thumbnail">
+            </div>
+            <div class="image-wrapper" onclick="openModal('rostelecom', 2)">
+                <img src="Foto/рис 2.png" alt="Excel модель 2" class="thumbnail">
+            </div>
+            <div class="image-wrapper" onclick="openModal('rostelecom', 3)">
+                <img src="Foto/рис 3.png" alt="Excel модель 3" class="thumbnail">
+            </div>
+        </div>
+        
         <!-- PyCharm -->
         <div class="section-title">PyCharm</div>
         <div class="projects-grid" id="pycharm-projects">
@@ -265,7 +278,7 @@
             </div>
         </div>
 
-        <!-- Математическое моделирование Excel -->
+        <!-- Математическое моделирование Excel (исправлен id, но он не обязателен) -->
         <div class="section-title">Математическое моделирование. Excel</div>
         <div class="projects-grid" id="excel-projects">
             <div class="image-wrapper" onclick="openModal('excel', 1)">
@@ -449,6 +462,12 @@
     <script>
         // Все изображения по категориям
         const allImages = {
+            // Новая категория для первого раздела
+            rostelecom: [
+                { src: 'Foto/рис 1.png', caption: 'Веб-приложение для тестирования соискателей - Интерфейс 1' },
+                { src: 'Foto/рис 2.png', caption: 'Веб-приложение для тестирования соискателей - Интерфейс 2' },
+                { src: 'Foto/рис 3.png', caption: 'Веб-приложение для тестирования соискателей - Интерфейс 3' }
+            ],
             pycharm: [
                 { src: 'new/хуй знает.png', caption: 'Проект на Python' }
             ],
